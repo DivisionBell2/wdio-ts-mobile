@@ -1,0 +1,26 @@
+{
+  "name": "mobile_tests_ios",
+  "type": "module",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^8.31.1",
+    "@wdio/appium-service": "^8.31.1",
+    "@wdio/cli": "^8.31.1",
+    "@wdio/local-runner": "^8.31.1",
+    "@wdio/mocha-framework": "^8.31.1",
+    "@wdio/spec-reporter": "^8.31.1",
+    "appium-uiautomator2-driver": "^3.0.0",
+    "appium-xcuitest-driver": "^7.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "android": "PLATFORM=android wdio run ./android.conf.ts",
+    "ios": "PLATFORM=ios wdio run ./ios.conf.ts"
+  },
+  "dependencies": {
+    "pg": "8.11.3",
+    "pg-hstore": "2.3.4",
+    "sequelize": "6.35.2",
+    "sequelize-typescript": "2.1.6"
+  }
+}

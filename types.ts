@@ -1,0 +1,1 @@
+type PlatformName = 'ios' | 'android';
